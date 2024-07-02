@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F00C6C62C349EA7007CD255 /* NavigationStackDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00C6C52C349EA7007CD255 /* NavigationStackDemoApp.swift */; };
 		3FD5A16B2C336EF300E5015A /* BananaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1C22D2C336E8800329819 /* BananaView.swift */; };
 		3FD5A16C2C336EF300E5015A /* AppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1C2302C336E8800329819 /* AppleView.swift */; };
 		3FD5A16D2C336EF300E5015A /* BananaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1C22E2C336E8800329819 /* BananaViewModel.swift */; };
@@ -15,12 +16,12 @@
 		3FD5A1702C336EF300E5015A /* PearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1C22A2C336E8800329819 /* PearViewModel.swift */; };
 		3FF1C21F2C336E2D00329819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF1C21E2C336E2D00329819 /* Assets.xcassets */; };
 		3FF1C2232C336E2D00329819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF1C2222C336E2D00329819 /* Preview Assets.xcassets */; };
-		3FF1C2352C336E8800329819 /* NavigationStackDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1C2332C336E8800329819 /* NavigationStackDemoApp.swift */; };
 		3FF1C2362C336E8800329819 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1C22C2C336E8800329819 /* RootView.swift */; };
 		3FF1C2372C336E8800329819 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1C2342C336E8800329819 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F00C6C52C349EA7007CD255 /* NavigationStackDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDemoApp.swift; sourceTree = "<group>"; };
 		3FF1C2172C336E2C00329819 /* NavigationStackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF1C21E2C336E2D00329819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FF1C2202C336E2D00329819 /* NavigationStackDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationStackDemo.entitlements; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		3FF1C22E2C336E8800329819 /* BananaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaViewModel.swift; sourceTree = "<group>"; };
 		3FF1C2302C336E8800329819 /* AppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleView.swift; sourceTree = "<group>"; };
 		3FF1C2312C336E8800329819 /* AppleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewModel.swift; sourceTree = "<group>"; };
-		3FF1C2332C336E8800329819 /* NavigationStackDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationStackDemoApp.swift; path = ../../../../Desktop/TestProj/NavigationStackDemo/NavigationStackDemoApp.swift; sourceTree = "<group>"; };
 		3FF1C2342C336E8800329819 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +66,7 @@
 		3FF1C2192C336E2C00329819 /* NavigationStackDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3FF1C2332C336E8800329819 /* NavigationStackDemoApp.swift */,
+				3F00C6C52C349EA7007CD255 /* NavigationStackDemoApp.swift */,
 				3FF1C22C2C336E8800329819 /* RootView.swift */,
 				3FF1C2342C336E8800329819 /* Router.swift */,
 				3FF1C2322C336E8800329819 /* Apple */,
@@ -187,12 +187,12 @@
 				3FF1C2362C336E8800329819 /* RootView.swift in Sources */,
 				3FF1C2372C336E8800329819 /* Router.swift in Sources */,
 				3FD5A16B2C336EF300E5015A /* BananaView.swift in Sources */,
+				3F00C6C62C349EA7007CD255 /* NavigationStackDemoApp.swift in Sources */,
 				3FD5A16C2C336EF300E5015A /* AppleView.swift in Sources */,
 				3FD5A16D2C336EF300E5015A /* BananaViewModel.swift in Sources */,
 				3FD5A16E2C336EF300E5015A /* AppleViewModel.swift in Sources */,
 				3FD5A16F2C336EF300E5015A /* PearView.swift in Sources */,
 				3FD5A1702C336EF300E5015A /* PearViewModel.swift in Sources */,
-				3FF1C2352C336E8800329819 /* NavigationStackDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

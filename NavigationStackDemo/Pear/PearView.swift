@@ -9,16 +9,9 @@ import SwiftUI
 
 struct PearView: View {
     
-    @EnvironmentObject var router: Router
-    
     // MARK: Properties
-    let vm: PearViewModel
-    
-    
-    // MARK: Initialization
-    init(vm: PearViewModel) {
-        self.vm = vm
-    }
+    @EnvironmentObject var router: Router
+    @StateObject var vm: PearViewModel
     
     
     // MARK: - Views
@@ -35,16 +28,24 @@ struct PearView: View {
             }, label: {
                 Text("Banana 🍌")
             })
+            
+            Stepper("Num: \(vm.num)") {
+                vm.incrementNum()
+            } onDecrement: {
+                vm.decrementNum()
+            }
+            .minimumScaleFactor(0.2)
+            .padding(.top, 12)
         }
         .navigationBarBackButtonHidden()
         .toolbar(content: {
-            Button(action: {
-                router.navigateBack()
-            }, label: {
-                Text("< Back")
-            })
-            
-            Spacer()
+            ToolbarItem(placement: .topBarLeading) {
+                Button(action: {
+                    router.navigateBack()
+                }, label: {
+                    Text("Back")
+                })
+            }
         })
     }
 }

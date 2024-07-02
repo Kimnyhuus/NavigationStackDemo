@@ -9,17 +9,9 @@ import SwiftUI
 
 struct BananaView: View {
     
-    @EnvironmentObject var router: Router
-    
     // MARK: Properties
-    let vm: BananaViewModel
-    
-    
-    // MARK: Initialization
-    init(vm: BananaViewModel) {
-        self.vm = vm
-    }
-    
+    @EnvironmentObject var router: Router
+    @StateObject var vm: BananaViewModel
     
     // MARK: - Views
     var body: some View {
@@ -35,16 +27,24 @@ struct BananaView: View {
             }, label: {
                 Text("Pear 🍐")
             })
+            
+            Stepper("Num: \(vm.num)") {
+                vm.incrementNum()
+            } onDecrement: {
+                vm.decrementNum()
+            }
+            .minimumScaleFactor(0.2)
+            .padding(.top, 12)
         }
         .navigationBarBackButtonHidden()
         .toolbar(content: {
-            Button(action: {
-                router.navigateBack()
-            }, label: {
-                Text("< Back")
-            })
-            
-            Spacer()
+            ToolbarItem(placement: .topBarLeading) {
+                Button(action: {
+                    router.navigateBack()
+                }, label: {
+                    Text("Back")
+                })
+            }
         })
     }
 }
