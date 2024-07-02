@@ -13,9 +13,10 @@ class AppleViewModel {
     
     init() {
         self.id = Int.random(in: 1...1000)
+        print("||| Init ☀️: AppleViewModel, id: \(id)")
     }
     
     deinit {
-        print("||| AppleViewModel 🔥, id: \(id)")
+        print("||| Deinit 🔥: AppleViewModel, id: \(id)")
     }
 }

@@ -13,14 +13,14 @@ final class Router: ObservableObject {
     @Published var navPath = NavigationPath()
     
     func navigate(to destination: Destination) {
-        navPath = NavigationPath.init([destination])
-        print("||| add to navPath: \(navPath.count)")
+        navPath.append(destination)
+        print("||| Router: add to navPath: \(navPath.count)")
     }
     
     func navigateBack() {
         guard navPath.count > 0 else { return }
         navPath.removeLast()
-        print("||| rm navPath: \(navPath.count)")
+        print("||| Router: rm navPath: \(navPath.count)")
     }
     
     func navigateToRoot() {

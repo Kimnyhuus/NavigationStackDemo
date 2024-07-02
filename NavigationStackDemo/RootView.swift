@@ -43,17 +43,17 @@ struct RootView: View {
     func viewFor(destination: Destination) -> AnyView {
         switch destination {
         case .apple:
-            let _ = print("||| Dest: .apple")
+            let _ = print("||| NavStack: Destination - .apple")
             let vm = AppleViewModel()
             return AnyView(AppleView(vm: vm))
             
         case .banana:
-            let _ = print("||| Dest: .banana")
+            let _ = print("||| NavStack: Destination - .banana")
             let vm = BananaViewModel()
             return AnyView(BananaView(vm: vm))
             
         case .pear:
-            let _ = print("||| Dest: .pear")
+            let _ = print("||| NavStack: Destination - .pear")
             let vm = PearViewModel()
             return AnyView(PearView(vm: vm))
         }
